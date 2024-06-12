@@ -1,6 +1,6 @@
 # Repositorio criado para estudar e aplicar collections em JAVA
 - Collections
-- 1.1: Os nomes de parâmetros de tipo mais comumente usados são:
+- 1.1: Os nomes de parâmetros de tipo mais comumente usados são: <br>
   E - Elemento (usado extensivamente pelo Java Collections Framework)
   K - Chave
   N - Número
