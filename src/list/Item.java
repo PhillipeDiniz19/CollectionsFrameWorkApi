@@ -1,7 +1,7 @@
 package list;
 
 public class Item {
-    //Nome
-    //Preço
-    //Quantidade
+    String nome;
+    int preco;
+    int quantidade;
 }
