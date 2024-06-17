@@ -12,13 +12,31 @@ public class CatalogoLivros {
     }
 
     public void adicionarLivro(String titulo, String autor, int anoPublicacao){
-
+        livroList.add(new Livro(titulo, anoPublicacao, autor));
     }
-    public void pesquisarPorAutor(String autor){
 
+    public List<Livro> pesquisarPorAutor(String autor){
+        List<Livro> livrosPorAutor = new ArrayList<>();
+        if(!livroList.isEmpty()){
+            for(Livro l : livroList){
+                if(l.getAutor().equalsIgnoreCase(autor)){
+                    livrosPorAutor.add(l);
+                }
+            }
+        }
+        return livrosPorAutor;
     }
-    public void pesquisarPorIntervaloAnos(int anoInicial, int anoFinal){
 
+    public List<Livro> pesquisarPorIntervaloAnos(int anoInicial, int anoFinal){
+        List<Livro> livrosPorIntervaloAnos = new ArrayList<>();
+        if(!livroList.isEmpty()){
+            for(Livro l : livroList){
+                if(l.getAnoPublicacao() >= anoInicial && l.getAnoPublicacao() <= anoFinal){
+                    livrosPorIntervaloAnos.add(l);
+                }
+            }
+        }
+        return livrosPorIntervaloAnos;
     }
     public void pesquisarPorTitulo(String titulo){
 
