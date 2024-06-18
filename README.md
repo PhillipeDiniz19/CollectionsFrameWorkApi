@@ -9,4 +9,5 @@
   S, U, V, etc. - 2º, 3º, 4º tipos
 - FrameWork
 - Api
+- List<> // ArrayList<>
   
