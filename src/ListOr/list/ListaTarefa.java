@@ -1,4 +1,4 @@
-package list;
+package ListOr.list;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package list;
+package ListOr.list;
 
 public class Item {
     private String nome;
