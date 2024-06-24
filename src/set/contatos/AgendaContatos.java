@@ -13,12 +13,26 @@ public class AgendaContatos {
         contatoSet.add(new Contato(numero, nome));
     }
     public void exibirContatos(){
-
+        System.out.println(contatoSet);
     }
-    public void pesquisarPorNome(String nome){
-
+    public Set<Contato> pesquisarPorNome(String nome){
+        Set<Contato> contatoPorNome = new HashSet<>();
+        for(Contato c : contatoSet){
+            if(c.getNome().startsWith(nome)){
+                contatoPorNome.add(c);
+            }
+        }
+        return contatoPorNome;
     }
-    public void atualizarNumeroContato(String nome, int novoNumero){
-
+    public Contato atualizarNumeroContato(String nome, int novoNumero){
+        Contato contatoAtualizado = null;
+        for(Contato c : contatoSet){
+            if(c.getNome().equalsIgnoreCase(nome)){
+                c.setNumero(novoNumero);
+                contatoAtualizado = c;
+                break;
+            }
+        }
+        return contatoAtualizado;
     }
 }

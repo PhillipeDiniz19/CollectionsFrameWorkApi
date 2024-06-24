@@ -11,6 +11,10 @@ public class Contato {
         this.nome = nome;
     }
 
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
     public String getNome() {
         return nome;
     }
