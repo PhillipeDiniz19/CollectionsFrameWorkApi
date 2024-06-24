@@ -10,4 +10,5 @@
 - FrameWork
 - Api
 - List<> // ArrayList<>
+- equals // hashCode
   
