@@ -27,4 +27,17 @@ public class AgendaContatos {
         }
         return numeroPorNome;
     }
+    public static void main(String[] args){
+        AgendaContatos agendaContatos = new AgendaContatos();
+
+        agendaContatos.exibirContatos();
+        agendaContatos.adicionarContato("Phillipe", 61931313);
+        agendaContatos.adicionarContato("Phillipe", 1313);
+        agendaContatos.adicionarContato("Arthur", 12312312);
+        agendaContatos.adicionarContato("Felipe", 43242);
+        agendaContatos.adicionarContato("Cassio", 619413);
+        agendaContatos.removerContato("Cassio");
+        agendaContatos.exibirContatos();
+        System.out.println("o numero é: " + agendaContatos.pesquisarPorNome("Felipe"));
+    }
 }
