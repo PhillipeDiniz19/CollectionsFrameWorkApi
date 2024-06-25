@@ -1,4 +1,4 @@
-package MapInterface;
+package MapInterface.agendaMAP;
 
 import java.util.HashMap;
 import java.util.Map;
